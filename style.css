@@ -140,11 +140,11 @@ body {
   display: none;
 }
 
-.edit-mode .input[type="text"] {
+.list .list-items .editMode .input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.list .list-items.editMode .label {
   display: none;
 }
