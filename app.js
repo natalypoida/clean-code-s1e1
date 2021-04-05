@@ -15,20 +15,25 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement("li");
+  listItem.classList.add("list-items");
 
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
+  checkBox.classList.add("input");
   //label
   var label = document.createElement("label"); //label
+  label.classList.add("label");
   //input (text)
   var editInput = document.createElement("input"); //text
+  editInput.classList.add("input", "task");
   //button.edit
   var editButton = document.createElement("button"); //edit button
-
+  editButton.classList.add("button", "edit");
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
   var deleteButtonImg = document.createElement("img"); //delete button image
-
+  deleteButton.classList.add("button", "delete");
+  deleteButtonImg.classList.add("delete-img");
   label.innerText = taskString;
   label.className = "task";
 
